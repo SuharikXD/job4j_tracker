@@ -4,4 +4,9 @@ public class Cat {
     public static void main(String[] args) {
         Cat peppy = new Cat();
     }
+
+    public String sound() {
+        String voice = "may-may";
+        return voice;
+    }
 }
