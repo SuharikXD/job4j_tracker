@@ -26,15 +26,14 @@ public class Point {
         return sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2));
     }
 
-  //  public double distance3d(Point that) {
-  //      return this.distance(this.distance(that));
-  //  }
+    public double distance3d(Point that) {
+        return sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2) + pow(this.z - that.z, 2));
+    }
 
     public static void main(String[] args) {
-        Point a = new Point(0, 0);
-        Point b = new Point(0, 2);
-        Point z = new Point(2, 0);
-      //  double dist = a.distance3d(b, z);
-       // System.out.println(dist);
+        Point a = new Point(0, 0, 3);
+        Point b = new Point(0, 0, 3);
+        double dist = a.distance(b);
+        System.out.println(dist);
     }
 }
