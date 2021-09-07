@@ -3,9 +3,9 @@ package ru.job4j.pojo;
 import java.util.Date;
 
 public class Student {
-    String fio;
-    String group;
-    String date;
+    private String fio;
+    private String group;
+    private String date;
 
     public String getFio() {
         return fio;
