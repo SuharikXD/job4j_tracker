@@ -6,9 +6,7 @@ import java.time.format.DateTimeFormatter;
 
 public class StartUI {
     public static void main(String[] args) {
-        Item first = new Item();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
-        String firstDate = first.getCreated().format(formatter);
-        System.out.println(firstDate);
+        Item first = new Item(0, "zxc");
+        System.out.println(first);
     }
 }
