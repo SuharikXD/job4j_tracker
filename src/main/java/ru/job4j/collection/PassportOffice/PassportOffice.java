@@ -17,13 +17,6 @@ public class PassportOffice {
     }
 
     public Citizen get(String passport) {
-        Citizen citizen = null;
-        for (String c : citizens.keySet()) {
-            if (c.contains(passport)) {
-                citizen = citizens.get(c);
-                break;
-            }
-        }
-        return citizen;
+        return citizens.get(passport);
     }
 }
