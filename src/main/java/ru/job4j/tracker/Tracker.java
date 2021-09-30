@@ -22,7 +22,7 @@ public class Tracker {
     public List<Item> findByName(String key) {
         List<Item> result = new ArrayList<>();
         for (Item i : items) {
-            if(i.getName().contains(key)) {
+            if (i.getName().contains(key)) {
                 result.add(i);
             }
         }
@@ -56,10 +56,11 @@ public class Tracker {
         }
         return rsl;
     }
+
     public boolean delete(int id) {
         int index = indexOf(id);
         boolean rsl = index != -1;
-        if (rsl){
+        if (rsl) {
             items.remove(index);
         }
         return rsl;

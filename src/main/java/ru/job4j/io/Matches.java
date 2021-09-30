@@ -8,11 +8,11 @@ public class Matches {
         System.out.println("Игра 11.");
         boolean turn = true;
         int count = 11;
-        while (count > 0) {
+        while (true) {
             String player = turn ? "Первый игрок" : "Второй игрок";
             System.out.println(player + " введите число от 1 до 3:");
             int matches = Integer.parseInt(input.nextLine());
-            if(matches > 0 && matches <=3) {
+            if (matches > 0 && matches <= 3) {
                 turn = !turn;
                 count -= matches;
                 if (count <= 0) {

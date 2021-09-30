@@ -3,13 +3,14 @@ package ru.job4j.oop;
 public class Cat {
     private String food;
     private String name;
+
     public void giveNick(String nick) {
         this.name = nick;
     }
 
     public void show() {
-        System.out.println("Котика зовут:"+ " " + this.name);
-        System.out.println("Он ел:"+ " " + this.food);
+        System.out.println("Котика зовут:" + " " + this.name);
+        System.out.println("Он ел:" + " " + this.food);
     }
 
     public void eat(String meat) {

@@ -9,7 +9,7 @@ public class BankService {
     private final Map<User, List<Account>> users = new HashMap<>();
 
     public void addUser(User user) {
-        users.putIfAbsent(user, new ArrayList<Account>());
+        users.putIfAbsent(user, new ArrayList<>());
 
     }
 
@@ -29,7 +29,7 @@ public class BankService {
 
     public User findByPassport(String passport) {
         User user = null;
-        for (User u : users.keySet()){
+        for (User u : users.keySet()) {
             if (u.getPassport().equals(passport)) {
                 user = u;
                 break;

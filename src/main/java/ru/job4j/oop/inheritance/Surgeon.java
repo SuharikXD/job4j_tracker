@@ -3,12 +3,13 @@ package ru.job4j.oop.inheritance;
 public class Surgeon extends Doctor {
     private boolean operation;
 
-    public Surgeon(boolean operation, String Diagnosis, String name, String surname, String education, String birthday) {
-        super(Diagnosis, name, surname, education, birthday);
+    public Surgeon(boolean operation, String diagnosis,
+                   String name, String surname, String education, String birthday) {
+        super(diagnosis, name, surname, education, birthday);
         this.operation = operation;
     }
 
-    public boolean SuccessfulOperation () {
+    public boolean successfulOperation() {
         return operation;
     }
 

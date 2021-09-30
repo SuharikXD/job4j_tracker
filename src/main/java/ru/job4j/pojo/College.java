@@ -8,7 +8,8 @@ public class College {
         student.setDate("24.08.2021");
 
         System.out.println(
-                "Student " + student.getFio() + " has been in the " + student.getGroup() + " group since " + student.getDate()
+                "Student " + student.getFio() + " has been in the "
+                        + student.getGroup() + " group since " + student.getDate()
         );
     }
 }

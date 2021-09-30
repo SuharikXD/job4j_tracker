@@ -11,7 +11,7 @@ public class Library {
         books[1] = second;
         books[2] = third;
         books[3] = cleanCode;
-        for(int index = 0; index < books.length; index++) {
+        for (int index = 0; index < books.length; index++) {
             Book bo = books[index];
             System.out.println(bo.getName() + " - " + bo.getCount());
         }
@@ -19,14 +19,14 @@ public class Library {
         Book temp = books[0];
         books[0] = books[3];
         books[3] = temp;
-        for(int index = 0; index < books.length; index++) {
+        for (int index = 0; index < books.length; index++) {
             Book bo = books[index];
             System.out.println(bo.getName() + " - " + bo.getCount());
         }
         System.out.println("Output the books with the name: Clean code");
-        for(int index = 0; index < books.length; index++) {
+        for (int index = 0; index < books.length; index++) {
             Book bo = books[index];
-            if("Clean code".equals(bo.getName())) {
+            if ("Clean code".equals(bo.getName())) {
                 System.out.println(bo.getName() + " - " + bo.getCount());
             }
         }

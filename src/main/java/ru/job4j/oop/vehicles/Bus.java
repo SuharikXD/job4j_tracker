@@ -1,4 +1,4 @@
-package ru.job4j.oop.Vehicles;
+package ru.job4j.oop.vehicles;
 
 public class Bus implements Vehicle {
 
