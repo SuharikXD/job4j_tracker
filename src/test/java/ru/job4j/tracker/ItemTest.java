@@ -16,7 +16,7 @@ public class ItemTest {
                 new Item(4, "Four"),
                 new Item(1, "First")
         );
-        Collections.sort(items);
+        Collections.sort(items, new ItemSortById());
         List<Item> extended = Arrays.asList(
                 new Item(1, "First"),
                 new Item(2, "Two"),
@@ -32,7 +32,7 @@ public class ItemTest {
                 new Item(4, "Four"),
                 new Item(1, "First")
         );
-        Collections.sort(items, Collections.reverseOrder());
+        Collections.sort(items, new ItemSortByIdReverse());
         List<Item> extended = Arrays.asList(
                 new Item(4, "Four"),
                 new Item(2, "Two"),
