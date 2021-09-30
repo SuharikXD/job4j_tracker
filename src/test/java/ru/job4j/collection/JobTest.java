@@ -13,10 +13,10 @@ public class JobTest {
         Comparator<Job> cmpNamePriority =
                 new JobDescByName().thenComparing(new JobDescByPriority());
         int rsl = cmpNamePriority.compare(
-                new Job("Impl task", 0),
+                new Job("Fix bug", 0),
                 new Job("Fix bug", 1)
         );
-        assertThat(rsl, lessThan(0));
+        assertThat(rsl, greaterThan(0));
     }
 
     @Test
@@ -24,10 +24,10 @@ public class JobTest {
         Comparator<Job> cmpNamePriority =
                 new JobDescByNameReverse().thenComparing(new JobDescByPriorityReverse());
         int rsl = cmpNamePriority.compare(
-                new Job("Impl task", 0),
+                new Job("Fix bug", 0),
                 new Job("Fix bug", 1)
         );
-        assertThat(rsl, greaterThan(0));
+        assertThat(rsl, lessThan(0));
     }
 
     @Test
