@@ -18,3 +18,5 @@ notifications:
       - SuharikXD@yandex.ru
     on_success: never # default: change
     on_failure: always # default: always
+
+CODECOV_TOKEN='6ea918f6-9ecd-4270-9a9e-b79288b185ba'
