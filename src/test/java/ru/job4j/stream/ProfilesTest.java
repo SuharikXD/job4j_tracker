@@ -22,8 +22,8 @@ public class ProfilesTest {
         List<Address> expected = new ArrayList<>();
         expected.add(new Address("Екатеринбург", "Ленина", 34, 12));
         expected.add(new Address("Пермь", "Победы", 1, 44));
-        expected.add(new Address("Челябинск", "Избирателей", 44, 3));
         expected.add(new Address("Тюмень", "Космонавтов", 8, 66));
+        expected.add(new Address("Челябинск", "Избирателей", 44, 3));
         assertThat(rsl, is(expected));
     }
 }
